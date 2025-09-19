@@ -1,4 +1,4 @@
-<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.oasis.urbanoasis">
     <application
         android:label="urbanoasis"
         android:name="${applicationName}"
