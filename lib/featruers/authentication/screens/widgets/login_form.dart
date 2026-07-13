@@ -1,0 +1,67 @@
+import 'package:flutter/material.dart';
+import 'package:iconsax/iconsax.dart';
+
+import '../../../../utils/constants/sizes.dart';
+import '../../../../utils/constants/texts.dart';
+
+class OLoginForm extends StatelessWidget {
+  const OLoginForm({
+    super.key,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return Form(
+      child: Padding(
+          padding: const EdgeInsets.symmetric(vertical: OSizes.spaceBtwSections),
+          child: Column(
+            children: [
+              //Email
+              TextFormField(
+                decoration: const InputDecoration(
+                  prefixIcon: Icon(Iconsax.direct_right),
+                  labelText: OTexts.email,
+                ),
+              ),
+              const SizedBox(height: OSizes.spaceBtwInputFields),
+
+              //Password
+              TextFormField(
+                decoration: const InputDecoration(
+                  prefixIcon: Icon(Iconsax.password_check),
+                  labelText: OTexts.password,
+                  suffixIcon: Icon(Iconsax.eye_slash),
+                ),
+              ),
+              const SizedBox(height: OSizes.spaceBtwInputFields /2),
+
+              //Remember Me & Forgot Password
+              Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: [
+                  //Remember Me
+                  Row(
+                    children: [
+                      Checkbox(value: true, onChanged: (value){}),
+                      const Text(OTexts.rememberMe),
+                    ],
+                  ),
+
+                  //Forgot Password
+                  TextButton(onPressed: (){}, child: const Text(OTexts.forgotPassword),)
+                ],
+              ),
+              const SizedBox(height: OSizes.spaceBtwSections),
+
+              //Sign In Button
+              SizedBox(width:double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(OTexts.signIn))),
+              const SizedBox(height: OSizes.spaceBtwItems),
+
+              //Create Account Button
+              SizedBox(width:double.infinity, child: OutlinedButton(onPressed: (){}, child: const Text(OTexts.createAccount))),
+            ],
+          )
+      ),
+    );
+  }
+}
