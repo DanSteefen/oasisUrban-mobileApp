@@ -1,33 +1,34 @@
-
 import 'package:flutter/material.dart';
 
-import 'package:urbanoasis/common/style/spacing_styles.dart';
+import 'package:urbanoasis/featruers/authentication/screens/widgets/login_form_divider.dart';
 import 'package:urbanoasis/utils/constants/sizes.dart';
+import 'package:urbanoasis/utils/constants/texts.dart';
 import 'package:urbanoasis/utils/helpers/helper_functions.dart';
 
-import '../widgets/login_form.dart';
-import '../widgets/login_form_divider.dart';
 import '../widgets/login_form_social_button.dart';
-import '../widgets/login_header.dart';
+import '../widgets/signup_form.dart';
 
-class LoginScreen extends StatelessWidget{
-  const LoginScreen({super.key});
+class SignupScreen extends StatelessWidget{
+  const SignupScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
     final dark = OHelperFunctions.isDarkMode(context);
 
     return Scaffold(
+      appBar: AppBar(),
       body: SingleChildScrollView(
         child: Padding(
-          padding: OSpacingStyle.paddingWithAppBarHeight,
+          padding: const EdgeInsets.all(OSizes.defaultSpaces),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              //Logo, Title & Sub-Title
-              OLoginHeader(dark: dark),
+              //Title
+              Text(OTexts.signUpTitle, style: Theme.of(context).textTheme.headlineMedium),
+              const SizedBox(height: OSizes.spaceBtwSections),
 
               //Form
-              const OLoginForm(),
+              OSignupForm(dark: dark),
 
               //Divider
               OLoginFormDivider(dark: dark),
@@ -35,17 +36,13 @@ class LoginScreen extends StatelessWidget{
 
               //Footer
               const OLoginFormSocialButton(),
+
             ],
           ),
         ),
       ),
     );
   }
+
 }
-
-
-
-
-
-
 

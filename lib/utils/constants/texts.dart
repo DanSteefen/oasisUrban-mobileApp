@@ -31,6 +31,7 @@ class OTexts{
   static const String orSignUpWith = "Or Sign Up With";
   static const String iAgreeTo = "I Agree To";
   static const String privacyPolicy = "Privacy Policy";
+  static const String and = "And";
   static const String termsOfUse = "Terms Of Use";
   static const String verificationCode = "Verification Code";
   static const String resendEmail = "Resend Email";
