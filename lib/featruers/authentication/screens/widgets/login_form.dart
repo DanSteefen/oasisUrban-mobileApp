@@ -3,6 +3,7 @@ import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:urbanoasis/featruers/authentication/screens/passwordConfiguration/forgetPassword.dart';
 import 'package:urbanoasis/featruers/authentication/screens/signup/signup.dart';
+import 'package:urbanoasis/navigationMenu.dart';
 
 import '../../../../utils/constants/sizes.dart';
 import '../../../../utils/constants/texts.dart';
@@ -57,7 +58,7 @@ class OLoginForm extends StatelessWidget {
               const SizedBox(height: OSizes.spaceBtwSections),
 
               //Sign In Button
-              SizedBox(width:double.infinity, child: ElevatedButton(onPressed: (){}, child: const Text(OTexts.signIn))),
+              SizedBox(width:double.infinity, child: ElevatedButton(onPressed: () => Get.to(() => const NavigationMenu()), child: const Text(OTexts.signIn))),
               const SizedBox(height: OSizes.spaceBtwItems),
 
               //Create Account Button
