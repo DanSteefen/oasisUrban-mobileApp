@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:urbanoasis/featruers/authentication/screens/passwordConfiguration/forgetPassword.dart';
 import 'package:urbanoasis/featruers/authentication/screens/signup/signup.dart';
 
 import '../../../../utils/constants/sizes.dart';
@@ -50,7 +51,7 @@ class OLoginForm extends StatelessWidget {
                   ),
 
                   //Forgot Password
-                  TextButton(onPressed: (){}, child: const Text(OTexts.forgotPassword),)
+                  TextButton(onPressed: () => Get.to(() => const ForgetPasswordScreen()), child: const Text(OTexts.forgotPassword),)
                 ],
               ),
               const SizedBox(height: OSizes.spaceBtwSections),

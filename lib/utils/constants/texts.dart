@@ -56,4 +56,5 @@ class OTexts{
   static const String homeAppbarSubTittle = "Urban Oasis";
   static const String submit = "Submit";
   static const String oContinue = "Continue";
+  static const String done = "Done";
 }
