@@ -2,9 +2,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:urbanoasis/featruers/authentication/screens/home/home.dart';
 import 'package:urbanoasis/utils/constants/colors.dart';
 import 'package:urbanoasis/utils/helpers/helper_functions.dart';
+
+import 'featruers/shop/screen/home/home.dart';
+
+
 
 class NavigationMenu extends StatelessWidget{
   const NavigationMenu({super.key});
