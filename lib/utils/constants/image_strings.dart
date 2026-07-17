@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
-class OImages{
-
+class OImages {
   OImages._();
 
   // APP LOGOS
@@ -13,15 +12,40 @@ class OImages{
   static const String facebook = "assets/logos/fb.png";
 
   //ONBOARDING
-  static const String onBoardingImage1 = "assets/images/on_boarding_images/sammy_line_delivery";
-  static const String onBoardingImage2 = "assets/images/on_boarding_images/sammy_line_searching";
-  static const String onBoardingImage3 = "assets/images/on_boarding_images/sammy_line_shopping";
+  static const String onBoardingImage1 =
+      "assets/images/on_boarding_images/sammy_line_delivery.png";
+  static const String onBoardingImage2 =
+      "assets/images/on_boarding_images/sammy_line_searching.png";
+  static const String onBoardingImage3 =
+      "assets/images/on_boarding_images/sammy_line_shopping.png";
 
   //ANIMATIONS
-  static const String verifyIllustration = "assets/images/on_boarding_images/sammy_line_backpack_with";
-  static const String deliveredInPlaneIllustration = "assets/images/on_boarding_images/sammy_line_come_back_latter";
-  static const String deliveryEmailIllustration = "assets/images/on_boarding_images/sammy_line_man_receive";
-  static const String productsSaleIllustration = "assets/images/on_boarding_images/sammy_line_sale";
-  static const String staticSuccessIllustration = "assets/images/on_boarding_images/sammy_line_success";
-  static const String productIllustration = "assets/images/on_boarding_images/sammy_line_workout";
+  static const String verifyIllustration =
+      "assets/images/animation/on_boarding_images/sammy_line_backpack_with.jpg";
+  static const String deliveredInPlaneIllustration =
+      "assets/images/animation/on_boarding_images/sammy_line_come_back_latter.jpg";
+  static const String deliveryEmailIllustration =
+      "assets/images/animation/on_boarding_images/sammy_line_man_receive.jpg";
+  static const String productsSaleIllustration =
+      "assets/images/animation/on_boarding_images/sammy_line_sale.jpg";
+  static const String staticSuccessIllustration =
+      "assets/images/animation/on_boarding_images/sammy_line_success.jpg";
+  static const String productIllustration =
+      "assets/images/animationanimation//on_boarding_images/sammy_line_workout.jpg";
+
+  //CATEGORIES
+  static const String sportIcon = "assets/images/icon/icon8-bowling-30.png";
+  static const String clothIcon = "assets/images/icon/icon8-dummy-50.png";
+  static const String shoeIcon = "assets/images/icon/icon8-shoes-50.png";
+  static const String cosmeticIcon =
+      "assets/images/icon/icon8-cosmetics-50.png";
+  static const String animalIcon = "assets/images/icon/icon8-dog-heart-64.png";
+  static const String toyIcon =
+      "assets/images/icon/icon8-wooden-toy-car-64.png";
+  static const String furnitureIcon =
+      "assets/images/icon/icon8-dining-chair-64.png";
+  static const String jeweleryIcon =
+      "assets/images/icon/icon8-spakling-diomond-50.png";
+  static const String electronicIcon =
+      "assets/images/icon/icon8-smart-phone-50.png";
 }
