@@ -9,6 +9,7 @@ class OCircularContainer extends StatelessWidget {
     this.width = 500,
     this.height = 500,
     this.radius = 500,
+    this.margin,
     this.padding = 0,
     this.backgroundColor = OColors.white,
   });
@@ -17,6 +18,7 @@ class OCircularContainer extends StatelessWidget {
   final double? height;
   final double radius;
   final double padding;
+  final EdgeInsets? margin;
   final Widget? child;
   final Color backgroundColor;
 
@@ -25,6 +27,7 @@ class OCircularContainer extends StatelessWidget {
     return Container(
       width: width,
       height: height,
+      margin: margin,
       padding: EdgeInsets.all(padding),
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(radius),

@@ -48,4 +48,14 @@ class OImages {
       "assets/images/icon/icon8-spakling-diomond-50.png";
   static const String electronicIcon =
       "assets/images/icon/icon8-smart-phone-50.png";
+
+  //BANNERS
+  static const String promoBanner1 =
+      "assets/images/banner/cosmetics-promo-baner.png";
+  static const String promoBanner2 =
+      "assets/images/banner/ladies-promo-baner.jpg";
+  static const String promoBanner3 =
+      "assets/images/banner/mens-promo-baner.avif";
+  static const String promoBanner4 =
+      "assets/images/banner/shoes-promo-baner.png";
 }
