@@ -1,6 +1,4 @@
 package com.oasis.urbanoasis;
 
-
-import io.flutter.embedding.android.FlutterActivity;
 public class MainActivity extends FluterActivity {
 }
