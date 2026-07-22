@@ -5,7 +5,9 @@ import '../../utils/constants/colors.dart';
 
 class OCartCounterIcon extends StatelessWidget {
   const OCartCounterIcon({
-    super.key, required this.onPressed, required this.iconColor,
+    super.key,
+    required this.onPressed,
+    required this.iconColor,
   });
 
   final VoidCallback onPressed;
@@ -15,7 +17,9 @@ class OCartCounterIcon extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        IconButton(onPressed: onPressed, icon: Icon(Iconsax.shopping_bag, color: iconColor)),
+        IconButton(
+            onPressed: onPressed,
+            icon: Icon(Iconsax.shopping_bag, color: iconColor)),
         Positioned(
           right: 0,
           child: Container(
@@ -26,8 +30,11 @@ class OCartCounterIcon extends StatelessWidget {
               borderRadius: BorderRadius.circular(100),
             ),
             child: Center(
-              child: Text('2', style: Theme.of(context).textTheme.labelLarge!.apply(color: OColors.white, fontSizeFactor: 0.8)),
-
+              child: Text('2',
+                  style: Theme.of(context)
+                      .textTheme
+                      .labelLarge!
+                      .apply(color: OColors.white, fontSizeFactor: 0.8)),
             ),
           ),
         ),

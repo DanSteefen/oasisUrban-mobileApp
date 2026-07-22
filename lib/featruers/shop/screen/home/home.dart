@@ -66,6 +66,13 @@ class HomeScreen extends StatelessWidget {
             ),
             const SizedBox(height: OSizes.spaceBtwSections),
 
+            //Heading
+            const OSectionHeading(
+                title: 'Popular Products',
+                showActionButton: false,
+                textColor: OColors.white),
+            const SizedBox(height: OSizes.spaceBtwItems),
+
             //Product Card
             OGridLayout(
                 itemCount: 4,

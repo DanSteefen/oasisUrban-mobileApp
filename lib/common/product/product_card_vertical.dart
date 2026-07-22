@@ -4,6 +4,7 @@ import 'package:urbanoasis/common/icon/o_circular_icon.dart';
 import 'package:urbanoasis/common/roundedContainer/rounded_container.dart';
 import 'package:urbanoasis/common/roundedImageWidget/rounded_image_widget.dart';
 import 'package:urbanoasis/common/style/shadows.dart';
+import 'package:urbanoasis/common/text/o_brand_title_text_with_verified_icon.dart';
 import 'package:urbanoasis/common/text/product_title_text.dart';
 import 'package:urbanoasis/utils/constants/colors.dart';
 import 'package:urbanoasis/utils/constants/image_strings.dart';
@@ -72,60 +73,54 @@ class OProductCardVertical extends StatelessWidget {
             ),
 
             //Details
-            Padding(
-              padding: const EdgeInsets.only(left: OSizes.sm),
+            const Padding(
+              padding: EdgeInsets.only(left: OSizes.sm),
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const OProductTitleText(
+                  OProductTitleText(
                       title:
                           'Nike shoes are globally renowned for blending cutting-edge athletic performance with iconic streetwear style.',
                       smallSize: true),
-                  const SizedBox(height: OSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text('Nike',
-                          overflow: TextOverflow.ellipsis,
-                          maxLines: 1,
-                          style: Theme.of(context).textTheme.labelMedium),
-                      const SizedBox(width: OSizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: OColors.primary,
-                        size: OSizes.iconXs,
-                      )
-                    ],
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      //Price
-                      Text('\$45',
-                          maxLines: 1,
-                          overflow: TextOverflow.ellipsis,
-                          style: Theme.of(context).textTheme.headlineMedium),
-
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: OColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(OSizes.cardRadiusMd),
-                            bottomRight:
-                                Radius.circular(OSizes.productImageRadius),
-                          ),
-                        ),
-                        child: const SizedBox(
-                            width: OSizes.iconLg * 1.2,
-                            height: OSizes.iconLg * 1.2,
-                            child: Center(
-                                child:
-                                    Icon(Iconsax.add, color: OColors.white))),
-                      ),
-                    ],
-                  )
+                  SizedBox(height: OSizes.spaceBtwItems / 2),
+                  OBrandTitleWithVerifiedIcon(title: 'Nike'),
                 ],
               ),
             ),
+
+            //Spacer
+            const Spacer(),
+
+            //Price Row
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                //Price
+                Padding(
+                  padding: const EdgeInsets.only(left: OSizes.sm),
+                  child: Text('\$45',
+                      maxLines: 1,
+                      overflow: TextOverflow.ellipsis,
+                      style: Theme.of(context).textTheme.headlineMedium),
+                ),
+
+                //Add to Cart Button
+                Container(
+                  decoration: const BoxDecoration(
+                    color: OColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(OSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(OSizes.productImageRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                      width: OSizes.iconLg * 1.2,
+                      height: OSizes.iconLg * 1.2,
+                      child: Center(
+                          child: Icon(Iconsax.add, color: OColors.white))),
+                ),
+              ],
+            )
           ],
         ),
       ),
