@@ -58,4 +58,11 @@ class OImages {
       "assets/images/banner/mens-promo-baner.avif";
   static const String promoBanner4 =
       "assets/images/banner/shoes-promo-baner.png";
+
+  //PRODUCTS
+  static const String productImage1 = "assets/images/product/nike-shoe.jpg";
+  static const String productImage2 =
+      "assets/images/product/leather-jacket.jpg";
+  static const String productImage3 = "assets/images/product/leans.jpg";
+  static const String productImage4 = "assets/images/product/back-cover.jpg";
 }

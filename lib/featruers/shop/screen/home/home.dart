@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:urbanoasis/common/layout/grid_layout.dart';
+import 'package:urbanoasis/common/product/product_card_vertical.dart';
 import 'package:urbanoasis/common/text/section_heading.dart';
 
 import 'package:urbanoasis/featruers/shop/screen/home/widget/container/search_container.dart';
@@ -15,12 +17,12 @@ class HomeScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
       body: SingleChildScrollView(
         child: Column(
           children: [
             //Header
-            OPrimaryHeaderContainer(
+            const OPrimaryHeaderContainer(
               child: Column(
                 children: [
                   //App Bar
@@ -52,7 +54,7 @@ class HomeScreen extends StatelessWidget {
             ),
 
             //Banner Body
-            Padding(
+            const Padding(
               padding: EdgeInsets.all(OSizes.defaultSpaces),
               child: OPromoSlider(
                 baner: [
@@ -62,6 +64,12 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+            const SizedBox(height: OSizes.spaceBtwSections),
+
+            //Product Card
+            OGridLayout(
+                itemCount: 4,
+                itemBuilder: (_, index) => const OProductCardVertical()),
           ],
         ),
       ),
