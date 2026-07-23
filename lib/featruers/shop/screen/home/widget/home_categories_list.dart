@@ -18,6 +18,7 @@ class OHomeCategoriesList extends StatelessWidget {
         itemBuilder: (_, index) {
           OVerticalImageText(
               image: OImages.shoeIcon, title: "Shoes", onTap: () {});
+          return null;
         },
       ),
     );

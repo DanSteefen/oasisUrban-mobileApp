@@ -5,7 +5,6 @@ import 'package:urbanoasis/common/roundedImageWidget/rounded_image_widget.dart';
 import 'package:urbanoasis/featruers/shop/controllers/home_controller.dart';
 import 'package:urbanoasis/featruers/shop/screen/home/widget/container/circular_container.dart';
 import 'package:urbanoasis/utils/constants/colors.dart';
-import 'package:urbanoasis/utils/constants/image_strings.dart';
 import 'package:urbanoasis/utils/constants/sizes.dart';
 
 class OPromoSlider extends StatelessWidget {

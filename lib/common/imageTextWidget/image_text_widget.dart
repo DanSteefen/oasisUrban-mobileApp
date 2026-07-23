@@ -9,7 +9,7 @@ class OVerticalImageText extends StatelessWidget {
     required this.image,
     required this.title,
     this.textColor = OColors.white,
-    this.backgroundColor = OColors.white,
+    this.backgroundColor,
     this.onTap,
   });
 

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:urbanoasis/featruers/shop/screen/profile/profile.dart';
+import 'package:urbanoasis/featruers/personalization/screens/profile/profile.dart';
 import 'package:urbanoasis/featruers/shop/screen/store/store.dart';
 import 'package:urbanoasis/featruers/shop/screen/wishList/wishList.dart';
 import 'package:urbanoasis/utils/constants/colors.dart';

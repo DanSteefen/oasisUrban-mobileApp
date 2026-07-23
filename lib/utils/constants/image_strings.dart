@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class OImages {
   OImages._();
 
@@ -65,4 +63,7 @@ class OImages {
       "assets/images/product/leather-jacket.jpg";
   static const String productImage3 = "assets/images/product/leans.jpg";
   static const String productImage4 = "assets/images/product/back-cover.jpg";
+
+  //PROFILE
+  static const String user = "assets/images/user/user.jpg";
 }

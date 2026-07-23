@@ -23,7 +23,7 @@ class OnBoardingController extends GetxController{
   // UPDATE CURRENT INDEX & JUMP TO NEXT PAGE
   void nextPage(){
     if(currentPageIndex.value == 2){
-      Get.offAll(LoginScreen());
+      Get.offAll(const LoginScreen());
     } else {
       int page = currentPageIndex.value + 1;
       pageController.jumpToPage(page);

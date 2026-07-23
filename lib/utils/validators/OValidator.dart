@@ -12,6 +12,7 @@ class OValidator{
     if(!emailRegExp.hasMatch(value)){
       return 'Invalid email address';
     }
+    return null;
   }
   
   static String? validatePassword(String? value){
