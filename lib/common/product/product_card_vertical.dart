@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:urbanoasis/common/icon/o_circular_icon.dart';
 import 'package:urbanoasis/common/roundedContainer/rounded_container.dart';
@@ -6,6 +7,7 @@ import 'package:urbanoasis/common/roundedImageWidget/rounded_image_widget.dart';
 import 'package:urbanoasis/common/style/shadows.dart';
 import 'package:urbanoasis/common/text/o_brand_title_text_with_verified_icon.dart';
 import 'package:urbanoasis/common/text/product_title_text.dart';
+import 'package:urbanoasis/featruers/shop/screen/prductDetails/productDetails.dart';
 import 'package:urbanoasis/utils/constants/colors.dart';
 import 'package:urbanoasis/utils/constants/image_strings.dart';
 import 'package:urbanoasis/utils/constants/sizes.dart';
@@ -19,7 +21,7 @@ class OProductCardVertical extends StatelessWidget {
     final dark = OHelperFunctions.isDarkMode(context);
 
     return GestureDetector(
-      onTap: () {},
+      onTap: () => Get.to(() => const ProductDetailsScreen()),
       child: Container(
         width: 180,
         padding: const EdgeInsets.all(1),
